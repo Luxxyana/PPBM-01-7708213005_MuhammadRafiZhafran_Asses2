@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BodrexActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailName"
+        android:layout_marginTop="14dp"
+        android:text="Detail Obat"
+        android:textSize="24sp"
+        android:textColor="@color/lavender"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginBottom="20sp"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/bodrex"
+        android:layout_below="@+id/detailName"
+        android:src="@drawable/cataflam1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama1"
+        android:text="Nama:"
+        android:layout_below="@+id/bodrex"
+        android:textColor="@color/lavender"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cataflam"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/nama1"
+        android:textSize="16sp"
+        android:id="@+id/detailTime"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Produk:"
+        android:id="@+id/descbodrex"
+        android:layout_below="@id/detailTime"
+        android:textColor="@color/lavender"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATAFLAM merupakan obat anti nyeri dengan kandungan Kalium Diklofenak. Kalium Diklofenak atau Potassium Diclofenac merupakan obat golongan Obat Antiinflmasi Non Steroid yang memiliki aktifitas antiinflamasi atau antiradang dan antinyeri."
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/descbodrex"
+        android:id="@+id/detailIngredients"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/detailIngredients"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_button_stroke"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Pesan Sekarang"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
